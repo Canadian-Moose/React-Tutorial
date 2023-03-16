@@ -1,4 +1,4 @@
-const BlogList = ({ blogs, title}) => {
+const BlogList = ({ blogs, title, handlePin}) => {
     // const blogs = props.blogs;
     // const title = props.title;
 
@@ -11,7 +11,7 @@ const BlogList = ({ blogs, title}) => {
                     <p>Written by { blog.author }</p>
                     <input type="radio" value="Pinned" checked={blog.pin}/> Pinned
                     <br/>
-                    <button>Change Pin</button>
+                    <button onClick={handlePin(blog.id)}>Change Pin</button>
                 </div>
             ))}
         </div>
