@@ -23,14 +23,27 @@ const Home = () => {
     } */
 
     const handlePin = (id) => {
-
+        /*let newBlogs = blogs.map((blog) => {
+            if (blog.id === id) {
+                if (blog.pin === true) {
+                    blog.pin = false;
+                    return blog;
+                } else {
+                    blog.pin = true;
+                    return blog;
+                }
+            } else {
+                return blog;
+            }
+        });
+        setBlogs(newBlogs);*/
     }
 
     useEffect(() => {
         return () => {
             console.log('use effect ran');
         };
-    }, [blogs]);
+    }, []);
     // empty dependency array makes only run on FIRST render
     
 
